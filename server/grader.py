@@ -4,14 +4,18 @@ from __future__ import annotations
 from typing import Dict, List
 
 
+_EPS = 1e-3
+
+
 def _clamp(x: float) -> float:
-    return max(0.0, min(1.0, float(x)))
+    """Clamp to the open interval (0, 1) as required by the grader spec."""
+    return max(_EPS, min(1.0 - _EPS, float(x)))
 
 
 def grade_easy(agent: dict, gold: dict) -> float:
     """0.5 for correct clause type + 0.5 for correct risk flag."""
     if not isinstance(agent, dict) or not isinstance(gold, dict):
-        return 0.0
+        return _clamp(0.0)
     score = 0.0
     if agent.get("risk_type") == gold.get("clause_type"):
         score += 0.5
@@ -36,12 +40,12 @@ def grade_medium(agent_flagged: List[dict], gold_flagged: List[dict]) -> float:
     a = _to_set(agent_flagged)
     g = _to_set(gold_flagged)
     if not g and not a:
-        return 1.0
+        return _clamp(1.0)
     if not a or not g:
-        return 0.0
+        return _clamp(0.0)
     tp = len(a & g)
     if tp == 0:
-        return 0.0
+        return _clamp(0.0)
     precision = tp / len(a)
     recall = tp / len(g)
     f1 = 2 * precision * recall / (precision + recall)

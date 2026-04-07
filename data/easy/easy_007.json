@@ -1,0 +1,9 @@
+{
+  "id": "easy_007",
+  "title": "Auto Renewal",
+  "clause_text": "This Agreement shall automatically renew for successive one-year terms unless Customer provides written notice of non-renewal at least 180 days prior to the end of the then-current term.",
+  "clause_type": "automatic_renewal",
+  "is_risky": true,
+  "risk_level": "medium",
+  "explanation": "180-day notice window for non-renewal is unusually long and easy to miss."
+}

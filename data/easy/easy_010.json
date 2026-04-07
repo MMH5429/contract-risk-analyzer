@@ -1,0 +1,9 @@
+{
+  "id": "easy_010",
+  "title": "Penalties",
+  "clause_text": "For each day of delay, Supplier shall pay Buyer liquidated damages equal to 5% of the total contract value, with no maximum cap on the aggregate amount.",
+  "clause_type": "uncapped_penalties",
+  "is_risky": true,
+  "risk_level": "critical",
+  "explanation": "Daily penalties with no cap can quickly exceed the contract value."
+}

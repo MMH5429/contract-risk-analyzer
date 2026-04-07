@@ -1,0 +1,9 @@
+{
+  "id": "easy_009",
+  "title": "Audit Rights",
+  "clause_text": "Customer shall have the right, at any time and without prior notice, to enter Vendor's premises and inspect, copy, or remove any records related to this Agreement.",
+  "clause_type": "audit_rights",
+  "is_risky": true,
+  "risk_level": "medium",
+  "explanation": "Unrestricted audit rights without notice are operationally disruptive."
+}

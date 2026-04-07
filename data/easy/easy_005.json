@@ -1,0 +1,9 @@
+{
+  "id": "easy_005",
+  "title": "Non-Compete",
+  "clause_text": "For a period of five (5) years following termination, Employee shall not engage in any business that competes, directly or indirectly, with Company anywhere in the world.",
+  "clause_type": "non_compete",
+  "is_risky": true,
+  "risk_level": "high",
+  "explanation": "Five-year worldwide non-compete is unreasonable in scope and duration."
+}

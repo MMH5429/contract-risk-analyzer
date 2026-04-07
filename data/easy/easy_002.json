@@ -1,0 +1,9 @@
+{
+  "id": "easy_002",
+  "title": "Termination at Will",
+  "clause_text": "The Company may terminate this Agreement at any time, for any reason or no reason, without notice and without liability to the Contractor.",
+  "clause_type": "unilateral_termination",
+  "is_risky": true,
+  "risk_level": "high",
+  "explanation": "One-sided termination right with no notice creates significant business risk."
+}

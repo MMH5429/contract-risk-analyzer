@@ -1,0 +1,14 @@
+spec_version: 1
+name: contract_risk_analyzer
+description: Train agents to identify risky clauses in legal contracts.
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+tasks:
+  - id: easy_contract_review
+    difficulty: easy
+  - id: medium_contract_review
+    difficulty: medium
+  - id: hard_contract_review
+    difficulty: hard

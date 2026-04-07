@@ -1,0 +1,20 @@
+{
+  "id": "medium_001",
+  "title": "SaaS Master Services Agreement",
+  "contract_text": "Master SaaS Agreement between Acme Corp and BetaSoft Inc.",
+  "clauses": [
+    {"id": "c1", "text": "BetaSoft grants Acme a non-exclusive license to use the platform during the Term."},
+    {"id": "c2", "text": "Acme shall indemnify BetaSoft against all claims arising from Acme's use, including BetaSoft's own negligence."},
+    {"id": "c3", "text": "This Agreement renews automatically for one-year terms unless terminated with 90 days written notice."},
+    {"id": "c4", "text": "BetaSoft may terminate at any time, for any reason, without notice and without refund."},
+    {"id": "c5", "text": "All fees are due net 30. Late payments accrue interest at 1.5% per month."},
+    {"id": "c6", "text": "BetaSoft's aggregate liability under this Agreement shall not exceed fees paid in the prior 12 months."},
+    {"id": "c7", "text": "This Agreement is governed by the laws of the State of Delaware."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "indemnification", "risk_level": "high"},
+    {"clause_id": "c3", "risk_type": "automatic_renewal", "risk_level": "medium"},
+    {"clause_id": "c4", "risk_type": "unilateral_termination", "risk_level": "high"},
+    {"clause_id": "c6", "risk_type": "limitation_of_liability", "risk_level": "medium"}
+  ]
+}

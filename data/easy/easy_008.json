@@ -1,0 +1,9 @@
+{
+  "id": "easy_008",
+  "title": "Most Favored Nation",
+  "clause_text": "Vendor agrees that the prices charged to Customer hereunder shall at all times be no higher than those charged to any other customer of Vendor for substantially similar products or services.",
+  "clause_type": "most_favored_nation",
+  "is_risky": true,
+  "risk_level": "medium",
+  "explanation": "MFN clauses constrain pricing flexibility and create audit exposure."
+}

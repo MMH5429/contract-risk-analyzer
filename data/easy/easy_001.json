@@ -1,0 +1,9 @@
+{
+  "id": "easy_001",
+  "title": "Supplier Liability Clause",
+  "clause_text": "The Supplier shall bear unlimited liability for any and all damages, losses, costs, and expenses arising out of or in connection with this Agreement, regardless of cause.",
+  "clause_type": "unlimited_liability",
+  "is_risky": true,
+  "risk_level": "critical",
+  "explanation": "Unlimited liability exposes the supplier to unbounded financial risk."
+}

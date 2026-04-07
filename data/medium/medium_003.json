@@ -1,0 +1,19 @@
+{
+  "id": "medium_003",
+  "title": "Vendor Supply Agreement",
+  "contract_text": "Vendor Supply Agreement between MegaRetail and PartsCo.",
+  "clauses": [
+    {"id": "c1", "text": "PartsCo shall deliver components per the schedule in Schedule 1."},
+    {"id": "c2", "text": "For each day of delay, PartsCo owes MegaRetail 3% of contract value with no aggregate cap."},
+    {"id": "c3", "text": "PartsCo agrees not to sell similar components to any of MegaRetail's competitors at lower prices."},
+    {"id": "c4", "text": "MegaRetail may audit PartsCo's books and facilities at any time without notice."},
+    {"id": "c5", "text": "Term is 5 years, renewing automatically for 5-year periods unless cancelled 12 months before end of term."},
+    {"id": "c6", "text": "Disputes shall be resolved in courts of New York."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "uncapped_penalties", "risk_level": "critical"},
+    {"clause_id": "c3", "risk_type": "most_favored_nation", "risk_level": "medium"},
+    {"clause_id": "c4", "risk_type": "audit_rights", "risk_level": "medium"},
+    {"clause_id": "c5", "risk_type": "automatic_renewal", "risk_level": "high"}
+  ]
+}

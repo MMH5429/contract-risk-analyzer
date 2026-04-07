@@ -1,0 +1,18 @@
+{
+  "id": "medium_005",
+  "title": "Distribution Agreement",
+  "contract_text": "Distribution Agreement between BrandCo and DistribCo.",
+  "clauses": [
+    {"id": "c1", "text": "DistribCo is appointed as exclusive distributor in the Territory."},
+    {"id": "c2", "text": "BrandCo may terminate this Agreement at any time without cause and without notice."},
+    {"id": "c3", "text": "DistribCo shall not represent any competing product line for 7 years after termination, worldwide."},
+    {"id": "c4", "text": "DistribCo shall process all customer personal data on BrandCo's behalf, sharing such data with any affiliate without restriction."},
+    {"id": "c5", "text": "Disputes governed by laws of British Virgin Islands."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "unilateral_termination", "risk_level": "critical"},
+    {"clause_id": "c3", "risk_type": "non_compete", "risk_level": "high"},
+    {"clause_id": "c4", "risk_type": "weak_data_protection", "risk_level": "high"},
+    {"clause_id": "c5", "risk_type": "governing_law", "risk_level": "medium"}
+  ]
+}

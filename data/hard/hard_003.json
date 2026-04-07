@@ -1,0 +1,45 @@
+{
+  "id": "hard_003",
+  "title": "Global Marketing Services Agreement",
+  "contract_text": "Marketing Services Agreement between GlobalBrand and AdAgency for EU and California campaigns.",
+  "clauses": [
+    {"id": "c1", "text": "AdAgency shall deliver marketing services per Schedule A."},
+    {"id": "c2", "text": "AdAgency assigns to GlobalBrand all IP created during the engagement, including pre-existing tools used in deliverables."},
+    {"id": "c3", "text": "AdAgency shall collect, store, and process consumer personal data without restriction on purpose or duration."},
+    {"id": "c4", "text": "Liquidated damages of 10% of fees per day of campaign delay, with no upper limit."},
+    {"id": "c5", "text": "Either party may terminate at will, but only AdAgency must provide 90 days notice."},
+    {"id": "c6", "text": "AdAgency shall not work with any competitor of GlobalBrand for 5 years worldwide."},
+    {"id": "c7", "text": "GlobalBrand may audit AdAgency without prior notice at any time."},
+    {"id": "c8", "text": "Consumers may opt out of personalized advertising via the GlobalBrand website."},
+    {"id": "c9", "text": "AdAgency's prices to GlobalBrand shall be no higher than to any other client."},
+    {"id": "c10", "text": "Governing law: United Arab Emirates."},
+    {"id": "c11", "text": "Upon change of control of AdAgency, this Agreement terminates automatically."},
+    {"id": "c12", "text": "AdAgency indemnifies GlobalBrand for all claims, including those resulting from GlobalBrand's own conduct."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "broad_ip_assignment", "risk_level": "high"},
+    {"clause_id": "c3", "risk_type": "weak_data_protection", "risk_level": "critical"},
+    {"clause_id": "c4", "risk_type": "uncapped_penalties", "risk_level": "critical"},
+    {"clause_id": "c5", "risk_type": "unilateral_termination", "risk_level": "high"},
+    {"clause_id": "c6", "risk_type": "non_compete", "risk_level": "high"},
+    {"clause_id": "c7", "risk_type": "audit_rights", "risk_level": "medium"},
+    {"clause_id": "c9", "risk_type": "most_favored_nation", "risk_level": "medium"},
+    {"clause_id": "c10", "risk_type": "governing_law", "risk_level": "medium"},
+    {"clause_id": "c11", "risk_type": "change_of_control", "risk_level": "medium"},
+    {"clause_id": "c12", "risk_type": "indemnification", "risk_level": "high"}
+  ],
+  "cross_references": [
+    {"from_clause": "c3", "to_clause": "c8", "conflict_type": "partial_mitigation"}
+  ],
+  "compliance_requirements": {
+    "gdpr": {
+      "data_processing_basis": {"required": true, "present": false},
+      "purpose_limitation": {"required": true, "present": false},
+      "data_subject_rights": {"required": true, "present": true, "clause_id": "c8"}
+    },
+    "ccpa": {
+      "opt_out_right": {"required": true, "present": true, "clause_id": "c8"},
+      "notice_at_collection": {"required": true, "present": false}
+    }
+  }
+}

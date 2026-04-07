@@ -1,0 +1,9 @@
+{
+  "id": "easy_003",
+  "title": "IP Assignment",
+  "clause_text": "Contractor hereby irrevocably assigns to Company all right, title, and interest in any and all inventions, works, and intellectual property created by Contractor during the term, whether or not related to the services.",
+  "clause_type": "broad_ip_assignment",
+  "is_risky": true,
+  "risk_level": "high",
+  "explanation": "Assigning all IP regardless of relation to services is overly broad."
+}

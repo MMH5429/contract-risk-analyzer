@@ -1,0 +1,9 @@
+{
+  "id": "easy_006",
+  "title": "Indemnification",
+  "clause_text": "Licensee shall indemnify, defend, and hold harmless Licensor from any and all claims, damages, and expenses, including those arising from Licensor's own negligence or willful misconduct.",
+  "clause_type": "indemnification",
+  "is_risky": true,
+  "risk_level": "high",
+  "explanation": "Indemnifying the other party for their own misconduct is unusually broad."
+}

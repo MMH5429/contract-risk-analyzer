@@ -1,0 +1,39 @@
+{
+  "id": "hard_002",
+  "title": "Healthcare SaaS Agreement",
+  "contract_text": "SaaS Agreement between HealthCo and MedPlatform processing patient data.",
+  "clauses": [
+    {"id": "c1", "text": "MedPlatform shall implement appropriate technical and organizational measures to secure Patient Data."},
+    {"id": "c2", "text": "MedPlatform may share de-identified data with research partners and commercial affiliates."},
+    {"id": "c3", "text": "Term: 5 years, automatically renewing for 5-year periods unless cancelled 12 months in advance."},
+    {"id": "c4", "text": "HealthCo bears unlimited liability for any unauthorized access to Patient Data, even if caused by MedPlatform."},
+    {"id": "c5", "text": "MedPlatform may terminate at will with 30 days notice."},
+    {"id": "c6", "text": "Upon a change of control of HealthCo, MedPlatform may immediately renegotiate or terminate."},
+    {"id": "c7", "text": "MedPlatform's liability is capped at USD 25,000 in aggregate."},
+    {"id": "c8", "text": "Data subjects may request access and deletion via the in-product portal."},
+    {"id": "c9", "text": "HealthCo shall not engage any competing platform for 3 years post-termination."},
+    {"id": "c10", "text": "Governing law: State of Texas."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "weak_data_protection", "risk_level": "high"},
+    {"clause_id": "c3", "risk_type": "automatic_renewal", "risk_level": "high"},
+    {"clause_id": "c4", "risk_type": "unlimited_liability", "risk_level": "critical"},
+    {"clause_id": "c5", "risk_type": "unilateral_termination", "risk_level": "high"},
+    {"clause_id": "c6", "risk_type": "change_of_control", "risk_level": "medium"},
+    {"clause_id": "c7", "risk_type": "limitation_of_liability", "risk_level": "high"},
+    {"clause_id": "c9", "risk_type": "non_compete", "risk_level": "high"}
+  ],
+  "cross_references": [
+    {"from_clause": "c4", "to_clause": "c7", "conflict_type": "contradictory"}
+  ],
+  "compliance_requirements": {
+    "gdpr": {
+      "data_processing_basis": {"required": true, "present": false},
+      "data_subject_rights": {"required": true, "present": true, "clause_id": "c8"}
+    },
+    "ccpa": {
+      "opt_out_right": {"required": true, "present": false},
+      "deletion_right": {"required": true, "present": true, "clause_id": "c8"}
+    }
+  }
+}

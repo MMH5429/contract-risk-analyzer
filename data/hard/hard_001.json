@@ -1,0 +1,39 @@
+{
+  "id": "hard_001",
+  "title": "Enterprise Data Processing Agreement",
+  "contract_text": "Enterprise DPA between EuroBank and CloudVendor for processing of EU customer personal data.",
+  "clauses": [
+    {"id": "c1", "text": "CloudVendor shall process Personal Data only on documented instructions from EuroBank."},
+    {"id": "c2", "text": "CloudVendor may transfer Personal Data to any of its affiliates worldwide without further authorization."},
+    {"id": "c3", "text": "CloudVendor's aggregate liability under this Agreement shall not exceed EUR 50,000."},
+    {"id": "c4", "text": "EuroBank shall indemnify CloudVendor for any regulatory fines arising from data processing, including those caused by CloudVendor's negligence."},
+    {"id": "c5", "text": "CloudVendor may terminate this DPA on 7 days notice for any reason."},
+    {"id": "c6", "text": "CloudVendor shall maintain records of processing activities and make them available to EuroBank upon written request."},
+    {"id": "c7", "text": "CloudVendor may use Personal Data to improve its own products and services without restriction."},
+    {"id": "c8", "text": "Data subject opt-out requests shall be forwarded to EuroBank within 5 business days."},
+    {"id": "c9", "text": "Penalties for breach of confidentiality: EUR 10,000 per day, uncapped."},
+    {"id": "c10", "text": "This Agreement shall be governed by the laws of the Cayman Islands."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "weak_data_protection", "risk_level": "critical"},
+    {"clause_id": "c3", "risk_type": "limitation_of_liability", "risk_level": "high"},
+    {"clause_id": "c4", "risk_type": "indemnification", "risk_level": "critical"},
+    {"clause_id": "c5", "risk_type": "unilateral_termination", "risk_level": "high"},
+    {"clause_id": "c7", "risk_type": "weak_data_protection", "risk_level": "critical"},
+    {"clause_id": "c9", "risk_type": "uncapped_penalties", "risk_level": "high"},
+    {"clause_id": "c10", "risk_type": "governing_law", "risk_level": "medium"}
+  ],
+  "cross_references": [
+    {"from_clause": "c1", "to_clause": "c7", "conflict_type": "contradictory"}
+  ],
+  "compliance_requirements": {
+    "gdpr": {
+      "data_processing_basis": {"required": true, "present": false},
+      "data_transfer_safeguards": {"required": true, "present": false},
+      "data_subject_rights": {"required": true, "present": true, "clause_id": "c8"}
+    },
+    "ccpa": {
+      "opt_out_right": {"required": true, "present": true, "clause_id": "c8"}
+    }
+  }
+}

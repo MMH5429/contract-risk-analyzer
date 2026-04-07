@@ -1,0 +1,18 @@
+{
+  "id": "medium_002",
+  "title": "Consulting Services Agreement",
+  "contract_text": "Consulting Services Agreement between Globex and Initech Consulting.",
+  "clauses": [
+    {"id": "c1", "text": "Consultant shall provide the services described in Exhibit A."},
+    {"id": "c2", "text": "Consultant assigns to Globex all inventions, works, and IP created during or related to engagement, including pre-existing IP used in deliverables."},
+    {"id": "c3", "text": "Consultant shall not work for any competitor of Globex anywhere in the world for 3 years post-termination."},
+    {"id": "c4", "text": "Consultant bears unlimited liability for any breach of confidentiality."},
+    {"id": "c5", "text": "Globex shall pay Consultant within 60 days of invoice."},
+    {"id": "c6", "text": "Either party may terminate for cause with 30 days notice."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "broad_ip_assignment", "risk_level": "high"},
+    {"clause_id": "c3", "risk_type": "non_compete", "risk_level": "high"},
+    {"clause_id": "c4", "risk_type": "unlimited_liability", "risk_level": "critical"}
+  ]
+}

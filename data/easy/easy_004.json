@@ -1,0 +1,9 @@
+{
+  "id": "easy_004",
+  "title": "Data Handling",
+  "clause_text": "Vendor may process customer personal data for any purpose Vendor deems necessary and may share such data with third parties without notice or consent.",
+  "clause_type": "weak_data_protection",
+  "is_risky": true,
+  "risk_level": "critical",
+  "explanation": "No purpose limitation or consent requirement violates GDPR/CCPA principles."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "medium_004",
+  "title": "Software License Agreement",
+  "contract_text": "Software License Agreement between SoftCo and ClientX.",
+  "clauses": [
+    {"id": "c1", "text": "SoftCo grants ClientX a non-transferable license to use the Software."},
+    {"id": "c2", "text": "Upon a change of control of ClientX, this license shall immediately and automatically terminate."},
+    {"id": "c3", "text": "SoftCo's liability is limited to the fees paid in the preceding six months."},
+    {"id": "c4", "text": "ClientX shall provide SoftCo with audit rights once per year on 30 days notice."},
+    {"id": "c5", "text": "Governing law: Republic of Ireland."},
+    {"id": "c6", "text": "ClientX shall indemnify SoftCo for any third-party claims arising from ClientX's use."}
+  ],
+  "flagged_clauses": [
+    {"clause_id": "c2", "risk_type": "change_of_control", "risk_level": "high"},
+    {"clause_id": "c3", "risk_type": "limitation_of_liability", "risk_level": "medium"},
+    {"clause_id": "c6", "risk_type": "indemnification", "risk_level": "medium"}
+  ]
+}

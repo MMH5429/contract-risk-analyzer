@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "task_id": "easy_contract_review",
+      "difficulty": "easy",
+      "data_dir": "easy",
+      "max_steps": 4,
+      "num_episodes": 10
+    },
+    {
+      "task_id": "medium_contract_review",
+      "difficulty": "medium",
+      "data_dir": "medium",
+      "max_steps": 12,
+      "num_episodes": 5
+    },
+    {
+      "task_id": "hard_contract_review",
+      "difficulty": "hard",
+      "data_dir": "hard",
+      "max_steps": 20,
+      "num_episodes": 3
+    }
+  ]
+}
